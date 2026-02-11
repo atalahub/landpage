@@ -1,0 +1,20 @@
+{
+  "name": "landpage",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build:posts && vite",
+    "build": "npm run build:posts && vite build",
+    "preview": "vite preview",
+    "build:posts": "node scripts/generate-posts.js"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  }
+}
